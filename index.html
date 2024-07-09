@@ -10,8 +10,8 @@
 <link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.3.353">
 
-  <meta name="author" content="Rodrigo Rodrigues-Silveira">
-  <title>PELA Comportamiento</title>
+  <meta name="author" content=" Rodrigo Rodrigues-Silveira  Universidad de Salamanca">
+  <title>Comportamiento legislativo y erosión democrática</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -325,35 +325,190 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">PELA Comportamiento</h1>
+  <h1 class="title">Comportamiento legislativo y erosión democrática</h1>
+  <p class="subtitle"><span style="background:purple;color:white;padding-left:10px;padding-right:10px;">El proyecto PELA Comportamiento (2024-2026)</span></p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Rodrigo Rodrigues-Silveira 
+<br>Rodrigo Rodrigues-Silveira<br><br><span style="background:#A52019;color:white; padding-left:10px;padding-right:10px;">Universidad de Salamanca</span> 
 </div>
 </div>
 </div>
 
 </section>
-<section id="quarto" class="slide level2">
-<h2>Quarto</h2>
-<p>Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <a href="https://quarto.org/docs/presentations/" class="uri">https://quarto.org/docs/presentations/</a>.</p>
+<section id="erosión-democrática-y-comportamiento-parlamentario" class="slide level2">
+<h2>Erosión democrática y comportamiento parlamentario</h2>
+<p><br></p>
+<p>¿Cómo investigar procesos de erosión democrática a partir del comportamiento parlamentario?</p>
+<p><br></p>
+<p>¿Qué tipos de información y estrategias metodológicas disponemos para entender el posicionamiento y las acciones de los legisladores frente a la democracia?</p>
 </section>
-<section id="bullets" class="slide level2">
-<h2>Bullets</h2>
-<p>When you click the <strong>Render</strong> button a document will be generated that includes:</p>
+<section id="qué-dice-la-literatura" class="slide level2">
+<h2>¿Qué dice la literatura?</h2>
+</section>
+<section id="qué-métodos-emplea" class="slide level2">
+<h2>¿Qué métodos emplea?</h2>
+</section>
+<section id="con-cuáles-datos" class="slide level2">
+<h2>¿Con cuáles datos?</h2>
+</section>
+<section id="pela-comportamiento" class="slide level2">
+<h2>PELA Comportamiento</h2>
+<p><br></p>
+<p>Extensión del Proyecto PELA-USAL</p>
+<p><br></p>
+<p>Datos de comportamiento legislativo</p>
+<p><br></p>
+<p>Actualmente, 8 países de América Latina</p>
+<p><br></p>
+<p>Cobertura temporal variada según país</p>
+</section>
+<section id="diagrama-de-flujo-del-proyecto" class="slide level2">
+<h2>Diagrama de flujo del proyecto</h2>
+
+<img data-src="Data_Pipeline.png" class="r-stretch quarto-figure-center"></section>
+<section id="conceptos-de-trabajo" class="slide level2">
+<h2>Conceptos de trabajo</h2>
+<p><br></p>
+<p>Modularidad</p>
+<p><br></p>
+<p>Interfacialidad</p>
+<p><br></p>
+<p>Diferentes perfiles de uso y usuario</p>
+<p><br></p>
+<p>Flexibilidad horizontal y vertical:</p>
 <ul>
-<li>Content authored with markdown</li>
-<li>Output from executable code</li>
+<li><p>niveles de análisis</p></li>
+<li><p>configuraciones</p></li>
 </ul>
 </section>
-<section id="code" class="slide level2">
-<h2>Code</h2>
-<p>When you click the <strong>Render</strong> button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
+<section id="arquitectura-capas-conceptuales" class="slide level2">
+<h2>Arquitectura: Capas conceptuales</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><img data-src="PELA_Layers.png"></p>
+</div><div class="column" style="width:60%;">
+<p>Espacios de organización conceptual y técnica</p>
+<p><br></p>
+<p>Jerarquizados en función de una lógica técnico-analítica</p>
+<p><br></p>
+<p>No obstante, superpuestos</p>
+<p><br></p>
+<p>Interdependientes</p>
+</div>
+</div>
+</section>
+<section id="arquitectura-capa-datos-brutos" class="slide level2">
+<h2>Arquitectura: Capa “Datos brutos”</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><img data-src="ALACIP_2024_Layer_Bruto.png"></p>
+</div><div class="column" style="width:60%;">
+<p>Datos originales de cada país en diferentes niveles de detalle</p>
+<p><br></p>
+<p>Formatos distintos (html, pdf, xml, json, csv, etc.)</p>
+<p><br></p>
+<p>No estandarizados</p>
+<p><br></p>
+<p>No aptos para el análisis</p>
+<p>(mayoría de los países)</p>
+</div>
+</div>
+</section>
+<section id="arquitectura-capa-estandarizados" class="slide level2">
+<h2>Arquitectura: Capa “Estandarizados”</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><img data-src="ALACIP_2024_Layer_Estandar.png"></p>
+</div><div class="column" data-align="center" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="modelo_datos_PELA.html" target="_blank"><img data-src="data_model.png"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="arquitectura-capa-estandarizados-1" class="slide level2">
+<h2>Arquitectura: Capa “Estandarizados”</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><img data-src="ALACIP_2024_Layer_Estandar.png"></p>
+</div><div class="column" style="width:60%;">
+<p>Modelo de datos estandarizados</p>
+<p><br></p>
+<p>Comparabilidad máxima: entre países y entre períodos legislativos</p>
+<p><br></p>
+<p>Estructural relacional (SQL)</p>
+<p><br></p>
+<p>Modular para permitir flexibilidad</p>
+<p><br></p>
+<p>Usuarios avanzados</p>
+</div>
+</div>
+</section>
+<section id="arquitectura-capa-indicadores" class="slide level2">
+<h2>Arquitectura: Capa “Indicadores”</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><img data-src="ALACIP_2024_Layer_Indicadores.png"></p>
+</div><div class="column" style="width:60%;">
+<p>Indicadores derivados de la literatura</p>
+<p><br></p>
+<p>Y propios de la investigación</p>
+<p><br></p>
+<p>Facilitar el análisis y ampliar el abanico de usuarios</p>
+<p><br></p>
+<p>Usuarios intermedios y generales</p>
+</div>
+</div>
+</section>
+<section id="arquitectura-capa-vistas" class="slide level2">
+<h2>Arquitectura: Capa “Vistas”</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><img data-src="ALACIP_2024_Layer_Vistas.png"></p>
+</div><div class="column" style="width:60%;">
+<p>Perspectivas o representaciones sintéticas o simplificadas de la base de datos</p>
+<p><br></p>
+<p>Facilitan la consulta de datos</p>
+<p><br></p>
+<p>Adecuación a perfiles de uso</p>
+<p><br></p>
+<p>Ejemplos: intervenciones en cada sesión, votos por partido, redes de coautoría, etc.</p>
+</div>
+</div>
+</section>
+<section id="arquitectura-capa-interfaces" class="slide level2">
+<h2>Arquitectura: Capa “Interfaces”</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><img data-src="ALACIP_2024_Layer_Interfaces.png"></p>
+</div><div class="column" style="width:60%;">
+<p>Conexiones con otras bases de datos</p>
+<p><br></p>
+<p>API - descarga de los datos</p>
+<p><br></p>
+<p>Paquetes en R y Python</p>
+<p><br></p>
+<p>Gráficos interactivos y tablas para usuarios no expertos</p>
+</div>
+</div>
+</section>
+<section id="arquitectura-capa-usuarios" class="slide level2">
+<h2>Arquitectura: Capa “Usuarios”</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><img data-src="ALACIP_2024_Layer_Usuarios.png"></p>
+</div><div class="column" style="width:60%;">
+<p>Adaptación a diversos perfiles de usuario potencial:</p>
+<ul>
+<li><p>Usuarios con sólidos conocimientos de ciencia de datos</p></li>
+<li><p>Académicos: fluencia en paquetes estadísticos</p></li>
+<li><p>Académicos: escaso dominio estadístico</p></li>
+<li><p>Medios de comunicación y organizaciones de la sociedad civil</p></li>
+</ul>
 </div>
 </div>
 <div class="footer footer-default">
@@ -571,44 +726,6 @@ Rodrigo Rodrigues-Silveira
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
