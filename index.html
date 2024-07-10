@@ -337,6 +337,16 @@
 </div>
 
 </section>
+<section class="slide level2">
+
+<style>
+.navigate-left  .controls-arrow,
+.navigate-right .controls-arrow{
+  font-size: 10px;
+  color: red;
+}
+</style>
+</section>
 <section id="erosión-democrática-y-comportamiento-parlamentario" class="slide level2">
 <h2>Erosión democrática y comportamiento parlamentario</h2>
 <p><br></p>
@@ -354,6 +364,19 @@
 <li><p><strong>Poder de agenda</strong> del ejecutivo</p></li>
 <li><p>Inestabilidad de <strong>coaliciones</strong> de gobierno</p></li>
 </ol>
+<aside class="notes">
+<p>Poder de agenda del ejecutivo incluye la capacidad de proponer y aprobar leyes, así como de vetarlas y establecer preferencias en la tramitación de las leyes. De ese modo, el legislativo tiene que reaccionar a la iniciativa del ejecutivo.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="qué-dice-la-literatura-1" class="slide level2">
 <h2>¿Qué dice la literatura?</h2>
@@ -366,6 +389,21 @@
 <li><p>Abuso del <strong>poder de “oversight”</strong> (control)</p></li>
 <li><p><strong>Recorte de derechos</strong> fundamentales por ley</p></li>
 </ol>
+<aside class="notes">
+<p>Polarización - falta de capacidad de colaboración y llegar a consensos en la aprobación de leyes.</p>
+<p>Poder “oversight” - procesos de impeachment.</p>
+<p>Recorte de derechos fundamentales por ley - leyes iniciadas en el mismo legislativo que restringen derechos civiles y políticos.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="qué-métodos-emplea" class="slide level2">
 <h2>¿Qué métodos emplea?</h2>
@@ -401,6 +439,20 @@
 <p><br></p>
 <p><strong>Tiempo:</strong> varía según la disponibilidad de datos</p>
 <p>(hasta 7 legislaturas en algunos casos)</p>
+<aside class="notes">
+<p>Países: AR, BR, CL, CO, EC, MX, PE, PY</p>
+<p>Países a incluir: CR, RD, PA, UY</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="pela-comportamiento-1" class="slide level2">
 <h2>PELA Comportamiento</h2>
@@ -433,6 +485,23 @@
 <li><p>niveles de análisis</p></li>
 <li><p>configuraciones</p></li>
 </ul>
+<aside class="notes">
+<p>Modularidad: Capacidad de emplear unidades de datos estandarizadas para generar configuraciones de análisis complejas y diversas. Eso permite flexibilidad para generar datos que se adapten a distintos tipos de investigación y fuerte adaptabilidad.</p>
+<p>Interfacialidad: Capacidad de conectar: (a) varias investigaciones que se vinculan a los estudios legislativos; (b) facilitar el uso de los datos por investigadores por medio de bibliotecas en R y Python.</p>
+<p>Flexibilidad horizontal: Por la modularidad, capacidad de combinar elementos de un mismo nivel de agregación para generar nuevos tipos de dato.</p>
+<p>Flexibilidad vertical: capacidad de agregar datos o combinar datos de distintos niveles para llevar a cabo análisis.</p>
+<p>Configuraciones: la idea básica es que los análisis se fundamentan en configuraciones específicas entre unidades básicas de información, que se pueden moldear según las necesidades de cada investigación.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="arquitectura-capas-conceptuales" class="slide level2">
 <h2>Arquitectura: Capas conceptuales</h2>
@@ -476,6 +545,19 @@
 <p><img data-src="data_model.png"></p>
 </div>
 </div>
+<aside class="notes">
+<p>Modelo de datos - representación de la base de datos relacional del proyecto, pero aún sin los indicadores derivados. La base final será más compleja y completa.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="arquitectura-capa-estandarizados-1" class="slide level2">
 <h2>Arquitectura: Capa “Estandarizados”</h2>
@@ -494,6 +576,19 @@
 <p>Usuarios avanzados</p>
 </div>
 </div>
+<aside class="notes">
+<p>Usuarios avanzados: desafortunadamente, pocos usuarios en ciencias sociales son capaces de trabajar con bases de datos SQL. Por eso, la idea es que los usuarios avanzados puedan trabajar con la base de datos directamente, pero también se generará una serie de herramientas para facilitar el acceso a los datos para otros tipos de usuario que no estén familiarizados con esta tecnología. Las vistas y los paquetes en R y Python, así como la API para la descarga de datos ayudarán mucho en esa tarea.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="arquitectura-capa-indicadores" class="slide level2">
 <h2>Arquitectura: Capa “Indicadores”</h2>
@@ -510,6 +605,21 @@
 <p>Todos los tipos de usuario</p>
 </div>
 </div>
+<aside class="notes">
+<p>¿Por qué calcular indicadores?</p>
+<p>Otro paso para aumentar la utilidad de la base de datos y adecuarla a los usos corrientes en la literatura.</p>
+<p>Indicadores tanto de la literatura como el DW-Nominate, como otros de la misma investigación. Un trabajo central será la indexación de las iniciativas y de las intervenciones, lo que facilitará la clasificación temática de las mismas y el uso para diversos estudios que enfocan aspectos concretos de la actividad legislativa.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="arquitectura-capa-vistas" class="slide level2">
 <h2>Arquitectura: Capa “Vistas”</h2>
@@ -526,6 +636,21 @@
 <p>Ejemplos: intervenciones en cada sesión, votos por partido, redes de coautoría, etc.</p>
 </div>
 </div>
+<aside class="notes">
+<p>Las vistas ayudan a facilitar el trabajo de recuperación y consulta de los datos.</p>
+<p>En lugar de escribir una sentencia SQL compleja, el usuario puede simplemente consultar una vista que ya tiene los datos que necesita.</p>
+<p>Eso implica una consulta con potenciales usuarios para entender cuáles son las necesidades de información y cómo se pueden representar de manera más eficiente.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="arquitectura-capa-interfaces" class="slide level2">
 <h2>Arquitectura: Capa “Interfaces”</h2>
@@ -542,6 +667,21 @@
 <p>Gráficos interactivos y tablas para usuarios no expertos</p>
 </div>
 </div>
+<aside class="notes">
+<p>Para que la base de datos se convierta en una herramienta útil más allá de su propia ecología, es necesario que se conecte con otras bases de datos y que se generen herramientas que faciliten el acceso a los datos.</p>
+<p>Por eso, se desarrollarán paquetes en R y Python, así como una API para la descarga de datos.</p>
+<p>También se generará una página web interactiva en la que usuarios inexpertos puedan acceder a representaciones predefinidas de los datos como gráficos interactivos y tablas sintéticas.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="arquitectura-capa-usuarios" class="slide level2">
 <h2>Arquitectura: Capa “Usuarios”</h2>
@@ -558,6 +698,21 @@
 </ul>
 </div>
 </div>
+<aside class="notes">
+<p>La base de datos debe ser accesible para todos los tipos de usuario, desde los más avanzados hasta los menos expertos.</p>
+<p>Aquí coloco como capa, pero en realidad es un eje transversal a todas las capas de la arquitectura.</p>
+<p>Por eso, se desarrollarán herramientas específicas para cada tipo de usuario, desde paquetes en R y Python para los más avanzados, hasta gráficos interactivos y tablas para los menos expertos.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="desarrollo-del-proyecto" class="slide level2">
 <h2>Desarrollo del proyecto</h2>
@@ -571,6 +726,20 @@
 <p><strong>Etapa 4:</strong> interfaces <span style="color:red">(no iniciada)</span></p>
 <p><br></p>
 <p><strong>Etapa 5:</strong> publicación de los datos <span style="color:red">(no iniciada)</span></p>
+<aside class="notes">
+<p>El proyecto se encuentra todavía en su fase inicial, pero esperamos avanzar en el próximo curso hasta la etapa 3 y empezar la fase 4.</p>
+<p>El paso más laborioso es la estandarización de los datos, que implica la revisión de cada uno de los casos y la adaptación a un modelo de datos común. Muchas veces los datos originales no están estructurados de manera que se puedan comparar entre sí, por lo que es necesario un trabajo de programación específico para cada país (o incluso legislatura, puesto que hay cambios de formato).</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 <div class="footer footer-default">
 
 </div>
